@@ -13,27 +13,27 @@ function App() {
       <nav>
         <span className={s.navItems} onclick="navTo('s1')">
           <i class="fa-regular fa-address-card"></i>
-          <a className={s.navWords}>Empresa</a>
+          <a href="#s1" className={s.navWords}>Empresa</a>
         </span>
         <span className={s.navItems} onclick="navTo('s2')">
           <i class="fa-solid fa-car-side"></i>
-          <a className={s.navWords}>Carros</a>
+          <a href="#s2" className={s.navWords}>Carros</a>
         </span>
         <span className={s.navItems} onclick="navTo('s3')">
           <i class="fa-brands fa-square-youtube"></i>
-          <a className={s.navWords}>Vídeo</a>
+          <a href="#s3" className={s.navWords}>Vídeo</a>
         </span>
         <span className={s.navItems} onclick="navTo('s4')">
          <i class="fa-solid fa-phone"></i>
-          <a className={s.navWords}>Contato</a>
+          <a href="#s4" className={s.navWords}>Contato</a>
         </span>
       </nav>
       <main>
-        <section id="s1">
+        <section id="s1" className={s.s1}>
           <h1>Ferrari</h1>
           <h2>O melhor carro esportivo do mundo.</h2>
         </section>
-        <section id="s2">
+        <section id="s2" className={s.s2}>
           <div className={s.card}>
             <img
               width="300px"
@@ -86,7 +86,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="s3">
+        <section id="s3" className={s.s3}>
           <iframe
             className={s.vid}
             src="https://www.youtube.com/embed/Po4w52SsNMk?si=EZhbUItp38zNPxI9&autoplay=0"
@@ -105,7 +105,7 @@ function App() {
             allowfullscreen
           ></iframe>
         </section>
-        <section id="s4">
+        <section id="s4" className={s.s4}>
           <h3>CONTATO</h3>
           <div className={s.formulario}>
             <label for="nome">Nome: </label>
