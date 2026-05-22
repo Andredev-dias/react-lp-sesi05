@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <nav>
+      {/* <nav>
         <span className={s.navItems} onclick="navTo('s1')">
           <i class="fa-regular fa-address-card"></i>
           <a href="#s1" className={s.navWords}>Empresa</a>
@@ -27,7 +27,23 @@ function App() {
          <i class="fa-solid fa-phone"></i>
           <a href="#s4" className={s.navWords}>Contato</a>
         </span>
-      </nav>
+      </nav> */}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav>
       <main>
         <section id="s1" className={s.s1}>
           <h1>Ferrari</h1>
